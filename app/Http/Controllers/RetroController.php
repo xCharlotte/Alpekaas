@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+use DB;
+
 
 class RetroController extends Controller
 {
@@ -13,7 +16,10 @@ class RetroController extends Controller
      */
     public function index()
     {
-        return view('retro');
+
+        $users = DB::table('users', 'name')->get();
+        return view('retro', compact('users'));
+
     }
 
     /**

@@ -7,18 +7,27 @@
 
     <form method="post" action="{{action('RetroController@store')}}">
         <section id="pickacardSection">
-            <select required name="title" id="choice1">
-                <option value="" hidden="maak een keuze"</option>
-                @foreach($cards as $card)
-                    <option v-bind:value="{{$card->name}}">{{$card->title}}</option>
+            <select required name="title">
+                <option value="" disabled selected>maak een keuze</option>
+
+            @foreach($card_options as $option)
+                    <option value="{{$option}}">{{$option}}</option>
                 @endforeach
             </select>
+            <div class="form-group">
+                <label for="description">Comment:</label>
+                <textarea class="form-control" rows="3" name="description" id="description" required></textarea>
+            </div>
         </section>
+
+
+
+        <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
+        <div class="buttonCenter">
+            <input type="submit" class="button gradientcolor" title="button" value="Volgende vraag">
+        </div>
     </form>
+
 </div>
-
-
-
-
 
 @endsection

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use DB;
-
+use Auth;
 
 class RetroController extends Controller
 {
@@ -16,9 +16,8 @@ class RetroController extends Controller
      */
     public function index()
     {
-
-        $cards = DB::table('cards', 'title')->get();
-        return view('retro', compact('cards'));
+        $card_options = ['dsfghsfgsdfhsfghsfgh', 'koekkoek'];
+        return view('retro', compact('card_options'));
 
     }
 
@@ -40,18 +39,12 @@ class RetroController extends Controller
      */
     public function store(Request $request)
     {
-        $id = Auth::id();
-
-        $exists = DB::table('cards')->where('cards_id', $id)->first();
-        if(!exists)
 
             DB::table('cards')
-                ->insert(['card_id' => $id]);
-            DB::table('cards')
-                ->where('cards_id', $id)
-                ->update(['description' => $request->input('description')]);
+                ->insert(['title' => $request->input('title'), 'description' => $request->input('description')]);
 
             return redirect('retro');
+
     }
 
     /**

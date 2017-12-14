@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class Cardsseeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         DB::table('cards')->insert([
             'title' => ('Samenwerking'),
+            'description' => ('hoi'),
         ]);
     }
 }

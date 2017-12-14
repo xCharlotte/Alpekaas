@@ -2,11 +2,23 @@
 
 @section('content')
 
+<div class="container">
+    <h1>Hallo  {{ Auth::user()->name }}</h1>
 
-<h1>Hallo</h1>
-{{--@foreach ($users as $user)--}}
-    {{--{{ $user->name }}--}}
-{{--@endforeach--}}
+    <form method="post" action="{{action('RetroController@store')}}">
+        <section id="pickacardSection">
+            <select required name="title" id="choice1">
+                <option value="" hidden="maak een keuze"</option>
+                @foreach($cards as $card)
+                    <option v-bind:value="{{$card->name}}">{{$card->title}}</option>
+                @endforeach
+            </select>
+        </section>
+    </form>
+</div>
 
-{{ Auth::user()->name }}
+
+
+
+
 @endsection

@@ -17,8 +17,8 @@ class RetroController extends Controller
     public function index()
     {
 
-        $users = DB::table('users', 'name')->get();
-        return view('retro', compact('users'));
+        $cards = DB::table('cards', 'title')->get();
+        return view('retro', compact('cards'));
 
     }
 
@@ -40,7 +40,18 @@ class RetroController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $id = Auth::id();
+
+        $exists = DB::table('cards')->where('cards_id', $id)->first();
+        if(!exists)
+
+            DB::table('cards')
+                ->insert(['card_id' => $id]);
+            DB::table('cards')
+                ->where('cards_id', $id)
+                ->update(['description' => $request->input('description')]);
+
+            return redirect('retro');
     }
 
     /**

@@ -1,3 +1,4 @@
+
 @extends('layouts.app')
 
 @section('content')
@@ -10,7 +11,7 @@
                 @foreach($anonymous as $noname)
                   <button type="button" value="{{$noname}}" name="sad"></button>
                 @endforeach
-                
+
                 @foreach($showName as $name)
                   <button type="button" value="{{$name}}" name="happy"></button>
                 @endforeach

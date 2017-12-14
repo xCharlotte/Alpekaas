@@ -19,6 +19,7 @@
     "vue": "^2.5.7"
   },
   "name": "alpekaas",
+  "description": "",
   "version": "1.0.0",
   "main": "webpack.mix.js",
   "directories": {

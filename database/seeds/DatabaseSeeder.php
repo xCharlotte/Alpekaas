@@ -12,5 +12,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
+        DB::table('safety_values')->insert([
+          'anonymous' => ('1,2'),
+          'showName' => ('3,4,5'),
+        ]);
     }
 }

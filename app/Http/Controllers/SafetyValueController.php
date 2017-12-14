@@ -8,6 +8,8 @@ class SafetyValueController extends Controller
 {
     public function index()
     {
-      return view('safetycheck');
+      $anonymous = ['1','2'];
+      $showName = ['3','4','5'];
+      return view('safetycheck', compact(['anonymous','showName']));
     }
 }

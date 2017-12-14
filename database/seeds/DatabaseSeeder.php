@@ -11,8 +11,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('cards')->insert([
-            'title' => ('Samenwerking'),
-        ]);
+        //
     }
 }

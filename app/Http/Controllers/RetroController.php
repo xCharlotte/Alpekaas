@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use DB;
 use Auth;
+use App\Card;
 
 class RetroController extends Controller
 {
@@ -16,8 +17,9 @@ class RetroController extends Controller
      */
     public function index()
     {
-        $card_options = ['dsfghsfgsdfhsfghsfgh', 'koekkoek'];
-        return view('retro', compact('card_options'));
+        $card_options = ['Samenwerking', 'Communicatie', 'Leiderschap', 'Projectmanagment'];
+        $cards = ['card', card::all()];
+        return view('retro', compact('card_options', 'cards'));
 
     }
 

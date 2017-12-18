@@ -8349,4 +8349,11 @@ button.close {
     display: none !important;
   }
 }
+<<<<<<< HEAD
+=======
+
+.panel-body .button {
+  padding: 50px 50px 50px 50px;
+}
+>>>>>>> refs/remotes/origin/develop
 

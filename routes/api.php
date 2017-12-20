@@ -2,7 +2,9 @@
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Card;
 use App\Http\Resources\User as UserResource;
+use App\Http\Resources\Card as CardResource;
 /*
 |--------------------------------------------------------------------------
 | API Routes

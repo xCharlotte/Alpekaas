@@ -25,5 +25,6 @@ Route::get('/users', function () {
 });
 
 Route::get('/cards', function () {
-  return CardResource::collection(Card::all());
+  $card = Card::find(1);
+  return new CardResource($card);
 });

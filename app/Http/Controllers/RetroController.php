@@ -18,7 +18,7 @@ class RetroController extends Controller
     public function index()
     {
         $card_options = ['Samenwerking', 'Communicatie', 'Leiderschap', 'Projectmanagment'];
-        $cards = ['card', card::all()];
+        $cards = Card::all();
         return view('retro', compact('card_options', 'cards'));
 
     }

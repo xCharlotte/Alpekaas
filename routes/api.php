@@ -21,3 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/users', function () {
     return UserResource::collection(User::all());
 });
+
+Route::get('/cards', function () {
+  return CardResource::collection(Card::all());
+});

@@ -31,7 +31,7 @@
 <div class="col-md-2 col-lg-3">
     @foreach($cards as $card)
         {{$card->title}}
-        @endforeach
+    @endforeach
 </div>
 
 </div>

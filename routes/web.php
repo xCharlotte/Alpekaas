@@ -18,7 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/safetycheck', 'SafetyValueController@index')->name('safetycheck');
 
+Route::get('/retro', 'RetroController@index')->name('retro');
+Route::post('retro', 'RetroController@store');
 // admin prefix
 Route::prefix('admin')->group(function() {
     Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');

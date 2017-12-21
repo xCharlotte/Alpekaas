@@ -33,9 +33,3 @@ Route::get('/cards', function () {
 
 Route::get('/safetyvalues', 'SafetyValueController@index');
 Route::get('/safetyvalues/{id}', 'SafetyValueController@show');
-
-// Route::get('/safetyvalues', function () {
-//   return SafetyValueResource::collection(SafetyValue::all());
-//   // $safetyValue = SafetyValue::all();
-//   // return new SafetyValueResource($safetyValue);
-// });

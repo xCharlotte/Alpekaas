@@ -1,16 +1,6 @@
 {
   "private": true,
   "scripts": {
-<<<<<<< HEAD
-    "build": "babel src -d lib"
-  },
-  "devDependencies": {
-    "axios": "^0.17",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-react": "^6.24.1",
-=======
     "dev": "npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -21,7 +11,6 @@
   },
   "devDependencies": {
     "axios": "^0.17",
->>>>>>> a0f74cb4efbe8b9a279d9ec03ef3cfcc65c7e20b
     "bootstrap-sass": "^3.3.7",
     "cross-env": "^5.1",
     "jquery": "^3.2",
@@ -30,11 +19,7 @@
     "vue": "^2.5.7"
   },
   "name": "alpekaas",
-<<<<<<< HEAD
-  "description": "### Met deze tool gaan al je problemen weg!",
-=======
   "description": "",
->>>>>>> a0f74cb4efbe8b9a279d9ec03ef3cfcc65c7e20b
   "version": "1.0.0",
   "main": "webpack.mix.js",
   "directories": {
@@ -44,21 +29,13 @@
     "type": "git",
     "url": "git+https://github.com/xCharlotte/Alpekaas.git"
   },
-<<<<<<< HEAD
-  "author": "",
-=======
   "author": "Charlotte",
->>>>>>> a0f74cb4efbe8b9a279d9ec03ef3cfcc65c7e20b
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/xCharlotte/Alpekaas/issues"
   },
   "homepage": "https://github.com/xCharlotte/Alpekaas#readme",
   "dependencies": {
-<<<<<<< HEAD
-    "npm-watch": "^0.3.0",
-=======
->>>>>>> a0f74cb4efbe8b9a279d9ec03ef3cfcc65c7e20b
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }

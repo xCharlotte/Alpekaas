@@ -8349,14 +8349,111 @@ button.close {
     display: none !important;
   }
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
 .panel-body .button {
   padding: 50px 50px 50px 50px;
 }
->>>>>>> refs/remotes/origin/develop
->>>>>>> a0f74cb4efbe8b9a279d9ec03ef3cfcc65c7e20b
+
+* {
+  font-family: Helvetica;
+}
+
+.samenwerking {
+  position: fixed;
+  bottom: 0;
+  margin: 10px;
+}
+
+.goed-retro {
+  float: left;
+  display: inline-block;
+  background-color: #16d3bd;
+  width: 50%;
+  min-height: 80vh;
+  border-radius: 10px;
+}
+
+.goed-retro h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.beter-retro {
+  float: right;
+  display: inline-block;
+  background-color: #f36050;
+  width: 50%;
+  height: 80vh;
+  border-radius: 10px;
+}
+
+.beter-retro h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.card-item {
+  width: 40%;
+  min-height: 75px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  margin-left: 45px;
+  margin-top: 20px;
+  padding: 10px 10px 10px 10px;
+  word-break: break-all;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.48);
+          box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.48);
+}
+
+.card-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.icons {
+  width: 15%;
+  height: 15%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 20px;
+}
+
+.competentie {
+  font-weight: bold;
+  font-size: 18px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #3a3a3a;
+  margin-bottom: -20px;
+}
+
+.card-header {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+hr {
+  border-top: 1px solid #979797;
+  margin: 5px;
+}
+
+#CUCKOLD {
+  display: inline-block;
+  margin-left: 50px;
+}
 

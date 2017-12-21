@@ -14,3 +14,98 @@
     padding: 50px 50px 50px 50px;
   }
 }
+
+* {
+  font-family: Helvetica;
+}
+//
+// html, body {
+//   height: 100%;
+//   margin: 0;
+//   padding: 0;
+// }
+
+.samenwerking {
+  position: fixed;
+  bottom: 0;
+  margin: 10px;
+
+}
+
+.goed-retro {
+  float: left;
+  display: inline-block;
+  background-color: #16d3bd;
+  width: 50%;
+  min-height: 80vh;
+  border-radius: 10px;
+  h1 {
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.beter-retro {
+  float: right;
+  display: inline-block;
+
+  background-color: #f36050;
+  width: 50%;
+  height: 80vh;
+  border-radius: 10px;
+  h1 {
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.card-item {
+    width: 40%;
+    min-height: 75px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin-left: 45px;
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.48);
+}
+
+.card-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icons {
+  width: 15%;
+  height: 15%;
+  display: inline-flex;
+  margin-right: 20px;
+}
+
+.competentie {
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-flex;
+  color: #3a3a3a;
+  margin-bottom: -20px;
+}
+
+.card-header {
+  position: sticky;
+}
+
+hr {
+  border-top: 1px solid #979797;
+  margin: 5px;
+}
+
+#CUCKOLD {
+  display: inline-block;
+  margin-left: 50px;
+}

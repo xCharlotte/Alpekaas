@@ -3,8 +3,10 @@
 use Illuminate\Http\Request;
 use App\User;
 use App\Card;
+use App\SafetyValue;
 use App\Http\Resources\User as UserResource;
 use App\Http\Resources\Card as CardResource;
+use App\Http\Resources\SafetyValue as SafetyValueResource;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -28,3 +30,12 @@ Route::get('/cards', function () {
   $card = Card::find(1);
   return new CardResource($card);
 });
+
+Route::get('/safetyvalues', 'SafetyValueController@index');
+Route::get('/safetyvalues/{id}', 'SafetyValueController@show');
+
+// Route::get('/safetyvalues', function () {
+//   return SafetyValueResource::collection(SafetyValue::all());
+//   // $safetyValue = SafetyValue::all();
+//   // return new SafetyValueResource($safetyValue);
+// });

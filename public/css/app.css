@@ -8349,11 +8349,26 @@ button.close {
     display: none !important;
   }
 }
-<<<<<<< HEAD
-=======
 
-.panel-body .button {
-  padding: 50px 50px 50px 50px;
+.title {
+  color: white;
+  text-align: center;
 }
->>>>>>> refs/remotes/origin/develop
+
+.test {
+  margin-top: 10px;
+}
+
+.card-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+}
+
+.container > * {
+  display: inline-block;
+}
 

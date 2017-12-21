@@ -8,9 +8,19 @@
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
-.panel-body {
-
-  .button {
-    padding: 50px 50px 50px 50px;
-  }
+.title {
+  color: white;
+  text-align: center;
+}
+.test {
+  margin-top: 10px;
+}
+ //Display flex en flex-wrap zodat de cards naast en onder elkaar komen
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.container > * {
+  display: inline-block;
 }

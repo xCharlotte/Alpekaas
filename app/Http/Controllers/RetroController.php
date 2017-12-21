@@ -29,7 +29,7 @@ class RetroController extends Controller
      */
     public function create()
     {
-        return view('admin.card.create')
+        return view('card.create')
     }
 
     /**
@@ -55,7 +55,7 @@ class RetroController extends Controller
     public function show($id)
     {
         $card = Card::find($id);
-        return view('admin.card.show', compact('card'));
+        return view('card.show', compact('card'));
     }
 
     /**
@@ -67,7 +67,7 @@ class RetroController extends Controller
     public function edit($id)
     {
       $card = Card::find($id);
-      return view('admin.card.edit', compact('card'));
+      return view('card.edit', compact('card'));
     }
 
     /**
@@ -85,7 +85,7 @@ class RetroController extends Controller
         ]);
 
         $card = Card::find($id)->update($request->all());
-        return redirect()->route(admin.card.index)->with('success','het is successvol opgeslagen');
+        return redirect()->route('card.index')->with('success','het is successvol opgeslagen');
     }
 
     /**
@@ -97,6 +97,6 @@ class RetroController extends Controller
     public function destroy($id)
     {
       $card = Card::find($id)->delete();
-      return redirect()->route(admin.card.index)->with('success','het is successvol verwijderd');
+      return redirect()->route('card.index')->with('success','het is successvol verwijderd');
     }
 }

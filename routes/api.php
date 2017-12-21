@@ -2,7 +2,9 @@
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Card;
 use App\Http\Resources\User as UserResource;
+use App\Http\Resources\Card as CardResource;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -23,5 +25,6 @@ Route::get('/users', function () {
 });
 
 Route::get('/cards', function () {
-  return CardResource::collection(Card::all());
+  $card = Card::find(1);
+  return new CardResource($card);
 });

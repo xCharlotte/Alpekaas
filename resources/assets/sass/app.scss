@@ -12,7 +12,7 @@
   color: white;
   text-align: center;
 }
-.test {
+.button-input {
   margin-top: 10px;
 }
  //Display flex en flex-wrap zodat de cards naast en onder elkaar komen
@@ -22,5 +22,15 @@
   width: 90%;
 }
 .container > * {
-  display: inline-block;
+  //display: inline-block;
+}
+
+.users-block {
+  background-color: blue;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 85vh;
+  justify-content: center;
+  color: white;
+  padding-top: 10px;
 }

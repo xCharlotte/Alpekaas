@@ -4,6 +4,7 @@
             <img src="img/collaboration.svg" v-if="card.type === 'Samenwerking'">
             <img src="img/communication.svg" v-if="card.type === 'Communicatie'">
             <h5>{{card.type}}</h5>
+            <hr>
         </div>
         <p v-text="card.value"></p>
     </div>

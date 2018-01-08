@@ -15,9 +15,7 @@ class CreateSafetyValuesTable extends Migration
     {
         Schema::create('safety_values', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
-            $table->string('anonymous');
-            $table->string('showName');
+            $table->string('name');
         });
     }
 

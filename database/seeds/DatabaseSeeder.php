@@ -11,9 +11,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-      DB::table('cards')->insert([
-          'title' => ('Samenwerking'),
-          'description' => ('hoi'),
-      ]);
+        feature/retrovue
+           DB::table('cards')->insert([
+             'title' => ('Samenwerking'),
+             'description' => ('hoi'),
+            ]);
     }
-  }

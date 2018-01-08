@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/vuetest', 'VuetestController@index')->name('vuetest');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -43201,7 +43201,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, "\n.list {\n    min-height: 85vh;\n    width: auto;\n    background-color: green;\n    padding: 15px 25px 15px 50px;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    margin-bottom: 10px;\n}\n.falselist {\n    min-height: 85vh;\n    width: auto;\n    background-color: red;\n    padding: 15px 25px 15px 50px;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    margin-bottom: 10px;\n}\n.button-group {\n    width: 300px;\n    height: 50px;\n    position: absolute;\n    background-color: black;\n    bottom: 20px;\n    right: 20px;\n}\n\n", ""]);
+exports.push([module.i, "\n.list {\n    min-height: 85vh;\n    width: auto;\n    background-color: #16d3bd;\n    padding: 15px 25px 15px 50px;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    margin-bottom: 10px;\n}\n.falselist {\n    min-height: 85vh;\n    width: auto;\n    background-color: #f36050;\n    padding: 15px 25px 15px 50px;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    margin-bottom: 10px;\n}\n.button-group {\n    width: 100px;\n    height: 50px;\n    position: absolute;\n    background-color: black;\n    bottom: 20px;\n    right: 20px;\n}\n\n", ""]);
 
 // exports
 

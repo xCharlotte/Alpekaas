@@ -82,7 +82,7 @@
     .list {
         min-height: 85vh;
         width: auto;
-        background-color: green;
+        background-color: #16d3bd;
         padding: 15px 25px 15px 50px;
         justify-content: center;
         margin-bottom: 10px;
@@ -92,7 +92,7 @@
     .falselist {
         min-height: 85vh;
         width: auto;
-        background-color: red;
+        background-color: #f36050;
         padding: 15px 25px 15px 50px;
         justify-content: center;
         margin-bottom: 10px;
@@ -100,7 +100,7 @@
     }
 
     .button-group {
-        width: 300px;
+        width: 100px;
         height: 50px;
         position: absolute;
         background-color: black;

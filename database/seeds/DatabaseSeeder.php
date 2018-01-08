@@ -11,9 +11,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-      DB::table('cards')->insert([
-          'title' => ('Samenwerking'),
-          'description' => ('hoi'),
-      ]);
+      # Call the seperate seeders in this file
+      $this->call(SafetySeeder::class);
+      $this->call(AdminSeeder::class);
     }
   }

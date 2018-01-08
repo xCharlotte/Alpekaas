@@ -3,12 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
-use DB;
-use Auth;
-use App\Card;
 
-class RetroController extends Controller
+class VuetestController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,10 +13,7 @@ class RetroController extends Controller
      */
     public function index()
     {
-        $card_options = ['Samenwerking', 'Communicatie', 'Leiderschap', 'Projectmanagment'];
-        $cards = ['card', card::all()];
-        return view('retro', compact('card_options', 'cards'));
-
+        return view('vuetest');
     }
 
     /**
@@ -41,12 +34,7 @@ class RetroController extends Controller
      */
     public function store(Request $request)
     {
-
-            DB::table('cards')
-                ->insert(['title' => $request->input('title'), 'description' => $request->input('description')]);
-
-            return redirect('retro');
-
+        //
     }
 
     /**

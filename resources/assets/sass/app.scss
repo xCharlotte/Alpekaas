@@ -8,29 +8,226 @@
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
-.title {
-  color: white;
-  text-align: center;
-}
-.button-input {
-  margin-top: 10px;
-}
- //Display flex en flex-wrap zodat de cards naast en onder elkaar komen
-.card-group {
-  display: flex;
-  flex-wrap: wrap;
-  width: 90%;
-}
-.container > * {
-  //display: inline-block;
+* {
+  font-family: Helvetica;
 }
 
-.users-block {
-  background-color: blue;
+// Retroboard vakkan opgedeeld over viewport van browser.
+// min-height op 80vh = hoogte v/d viewport
+
+.retro-container {
+  display: flex;
+}
+
+.goed-retro {
+  // float: left;
+  display: relative;
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: #16d3bd;
+  width: 50%;
+  min-height: 90vh;
+  border-radius: 10px;
+  h1 {
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.beter-retro {
+  // float: right;
+  display: relative;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #f36050;
+  width: 50%;
+  height: 90vh;
+  border-radius: 10px;
+  h1 {
+    text-align: center;
+    color: #fff;
+  }
+}
+
+// Competentiemenu classes voor selecteren van een competentiesoort om een nieuwe kaart toe te voegen.
+.card-menu {
+  position: fixed;
+  left: 360px;
+  top: 260px;
+}
+
+.comp-list {
+  width: 250px;
+  height: 300px;
+  display: block;
+  background-color: rgba(61, 167, 153, 0.5);
+  border-radius: 10px;
+
+}
+
+.competentie-button {
+  position: relative;
+  width: 230px;
+  height: 60px;
+  text-align: center;
+  background-color: #ffffff;
+  margin: 20px;
+  border-radius: 10px;
+  top: 10px;
+  right: 10px;
+  border: none;
+  outline: 0;
+  box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.48);
+  img {
+    position: relative;
+    width: 20%;
+    height: 70%;
+    right: 15px;
+  }
+}
+
+.list-competentie {
+  position: relative;
+  top: 4px;
+  right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3a3a3a;
+}
+
+.mini-plus {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  top: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.48);
+  span {
+    color: #5aa8f2;
+    font-size: 20px;
+    font-weight: lighter;
+    position: relative;
+    bottom: 4px;
+  }
+}
+
+.list-btn {
+  width: 8%;
+  height: 8%;
+  outline: 0;
+  position: fixed;
+  left: 530px;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+.rotate {
+  display: block;
+  animation: rotatePlus 0.5s forwards;
+}
+
+@keyframes rotatePlus {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(-45deg);}
+}
+
+// Classes van de retroboard kaarten die toegevoegd worden.
+.card-item {
+    width: 40%;
+    min-height: 75px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin-left: 45px;
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.48);
+}
+
+.card-group {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  min-height: 85vh;
-  justify-content: center;
+}
+
+.icons {
+  width: 15%;
+  height: 15%;
+  display: inline-flex;
+  margin-right: 20px;
+}
+
+.competentie {
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-flex;
+  color: #3a3a3a;
+  margin-bottom: -20px;
+}
+
+.card-header {
+  position: sticky;
+}
+
+hr {
+  border-top: 1px solid #979797;
+  margin: 5px;
+}
+
+.card-input {
+  width: 300px;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.48);
+  h1 {
+    color: #3a3a3a;
+  }
+  hr {
+    border-top: 1px solid #979797;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+  }
+}
+
+.card-input-field {
+  width: 250px;
+  max-width: 250px;
+  margin: 10px;
+  resize: none;
+  outline: 0;
+  border: 2px solid #16d3bd;
+  border-radius: 10px;
+}
+
+.submit-card-btn {
+  width: 100px;
+  height: 50px;
+  background-color: #50a9ed;
+  border-radius: 10px;
+  outline: 0;
+  border: none;
   color: white;
-  padding-top: 10px;
+}
+
+// competentie menu/lijst + inputmodal animation
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }

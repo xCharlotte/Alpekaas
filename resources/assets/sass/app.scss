@@ -13,7 +13,10 @@
   text-align: center;
 }
 .button-input {
-  margin-top: 10px;
+  right: 50px;
+  bottom: 25px;
+  position: absolute;
+  display: flex;
 }
  //Display flex en flex-wrap zodat de cards naast en onder elkaar komen
 .card-group {
@@ -26,11 +29,18 @@
 }
 
 .users-block {
-  background-color: blue;
+  background-color: #1f648b;
   display: flex;
   flex-wrap: wrap;
   min-height: 85vh;
   justify-content: center;
   color: white;
   padding-top: 10px;
+  border-radius: 10px;
+}
+
+.test {
+  border-radius: 5px;
+  background-color: #2a88bd;
+  color: white;
 }

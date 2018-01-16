@@ -18,6 +18,7 @@ window.Vue = require('vue');
 Vue.component('list', require('./components/ListComponent.vue'));
 Vue.component('card', require('./components/CardComponent.vue'));
 Vue.component('listbad', require('./components/ListBadComponent.vue'));
+// Vue.component('modal', {template: '#modal-template'});
 
 const app = new Vue({
     el: '#app'

@@ -8356,7 +8356,12 @@ button.close {
 }
 
 .button-input {
-  margin-top: 10px;
+  right: 50px;
+  bottom: 25px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .card-group {
@@ -8369,7 +8374,7 @@ button.close {
 }
 
 .users-block {
-  background-color: blue;
+  background-color: #1f648b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8381,5 +8386,12 @@ button.close {
           justify-content: center;
   color: white;
   padding-top: 10px;
+  border-radius: 10px;
+}
+
+.test {
+  border-radius: 5px;
+  background-color: #2a88bd;
+  color: white;
 }
 

@@ -20,7 +20,6 @@ class RetroController extends Controller
         $card_options = ['Samenwerking', 'Communicatie', 'Leiderschap', 'Projectmanagment'];
         $cards = Card::all();
         return view('retro', compact('card_options', 'cards'));
-
     }
 
     /**
@@ -30,7 +29,7 @@ class RetroController extends Controller
      */
     public function create()
     {
-        //
+        return view('card.create')
     }
 
     /**
@@ -41,12 +40,10 @@ class RetroController extends Controller
      */
     public function store(Request $request)
     {
+      DB::table('cards')
+          ->insert(['title' => $request->input('title'), 'description' => $request->input('description')]);
 
-            DB::table('cards')
-                ->insert(['title' => $request->input('title'), 'description' => $request->input('description')]);
-
-            return redirect('retro');
-
+      return redirect('retro');
     }
 
     /**
@@ -57,7 +54,8 @@ class RetroController extends Controller
      */
     public function show($id)
     {
-        //
+        $card = Card::find($id);
+        return view('card.show', compact('card'));
     }
 
     /**
@@ -68,7 +66,8 @@ class RetroController extends Controller
      */
     public function edit($id)
     {
-        //
+      $card = Card::find($id);
+      return view('card.edit', compact('card'));
     }
 
     /**
@@ -80,7 +79,13 @@ class RetroController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+          'title' => 'required',
+          'description' => 'required',
+        ]);
+
+        $card = Card::find($id)->update($request->all());
+        return redirect()->route('card.index')->with('success','het is successvol opgeslagen');
     }
 
     /**
@@ -91,6 +96,7 @@ class RetroController extends Controller
      */
     public function destroy($id)
     {
-        //
+      $card = Card::find($id)->delete();
+      return redirect()->route('card.index')->with('success','het is successvol verwijderd');
     }
 }

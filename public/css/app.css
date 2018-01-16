@@ -8350,7 +8350,36 @@ button.close {
   }
 }
 
-.panel-body .button {
-  padding: 50px 50px 50px 50px;
+.title {
+  color: white;
+  text-align: center;
+}
+
+.button-input {
+  margin-top: 10px;
+}
+
+.card-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+}
+
+.users-block {
+  background-color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 85vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  padding-top: 10px;
 }
 

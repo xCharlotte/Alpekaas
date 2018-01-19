@@ -34,7 +34,7 @@
                 <card v-for="(card, index) in cards" :key="index" :card="card"></card>
             </div>
             <div class="button-group">
-                <button class="showbutton" v-on:click="show = !show"><span><img class="sbuttonimg" src="img/additemretro.svg"></span> </button>
+                <button class="showbutton" v-on:click="show = !show"><img class="sbuttonimg" src="img/additemretro.svg"></button>
                 <transition name="fade">
                     <div v-if="show" class="competenties">
                         <!--Samenwerking-->
